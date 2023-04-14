@@ -27,13 +27,13 @@ class LinkedList(Node):
         return len(self.__arr) == 0
 
     def remove_duplicates(self):
-        for i in range(0, len(self.__arr), 1):
+        for each in self.__arr:
             count = 0
-            for j in range(0, len(self.__arr), 1):
-                if self.__arr[i] == self.__arr[j]:
+            for each2 in self.__arr:
+                if each == each2:
                     count += 1
             if count > 1:
-                self.__arr.remove(self.__arr[i])
+                self.__arr.remove(each)
 
     def __str__(self):
         return self.__arr

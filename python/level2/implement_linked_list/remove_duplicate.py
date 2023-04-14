@@ -15,4 +15,4 @@ linked_list.insertAtTail(3)
 linked_list.insertAtTail(3)
 
 remove_duplicates(linked_list)
-# print(linked_list)
+print(linked_list.__str__())
